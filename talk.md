@@ -185,8 +185,7 @@ zcat *.json.gz | \
 ```
 
 Output
-```
-{
+``` {
   "ip": "174.85.8.154",
   "ports": [
     443,
@@ -205,7 +204,46 @@ Output
 ```
 
 # Shodan Showdown
-## Top 3 Cleverest Queries
-## Top 3 Weirdest Things Found
-## Top 3 Most Terrifying Results
+
+# Top 5 Cleverest Queries
+
+# Robert #1 - Local router admin pages
+`state:"MO" city:"Saint Louis" http.title:"router"`
+
+# Joe #1
+
+# Robert #2 - Find where certs for a domain name are served
+`ssl.cert.subject.cn:secretlair.org`
+
+# Joe #2
+
+# Robert #3 - No authentication VNC
+`"authentication disabled" "RFB 003.008"`
+
+# Joe #3
+
+# Robert #4 - Only results with screenshots
+`has_screenshot:true`
+
+# Joe #4
+
+# Robert #5 - Unsecured Elasticsearch Clusters
+`product:Elastic "security features are not enabled"`
+
+# Joe #5
+
+
+Top 3 Weirdest Things Found
+
+# Robert #1 - Random 3d printer camera feed
+`https://www.shodan.io/host/79.160.204.31`
+
+# Joe #1
+
+# Robert #2 - Everything in Antartica
+`country:AQ`
+
+# Joe #2
+
+# Top 3 Most Terrifying Results
 
