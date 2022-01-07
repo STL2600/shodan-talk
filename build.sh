@@ -1,4 +1,4 @@
-#!bash
+#!/bin/bash
 
 if [ -d 'reveal.js' ]
 then

@@ -11,13 +11,90 @@
  
 # Origins
 
-# Basic Usage
-# In the browser - Joe
+ - Created by John Matherly
+ - Hobby project while studying bio-inframatics
+ - First pitched as "Netcraft for Everything"
+ - Originally peer-to-peer shared nmap scans
+ - Now scans the top 1000 ports once a week
 
-Shodan.io
-https://www.shodan.io/about/products
-Browser plugin
-https://2000.shodan.io/#/
+# Basic Usage
+
+- Browser usage
+- Programatically
+
+## Basic Search
+
+![Basic Search](images/basic-search.png)
+
+## Basic Search
+
+!["Raspian"](images/rasbian.png)
+
+## Basic Search
+
+!["Raspian"](images/rasbian-2.png)
+
+## Basic Search
+
+![Filtering](images/getting-started-dashboard.png)
+
+## Getting Ideas
+
+![Explore](images/shodan-explore.png)
+
+## Monitoring Networks
+
+![Monitoring Networks](images/monitor-setup-2.png)
+
+## Monitoring Networks
+
+![Monitoring Networks](images/monitor-setup-3.png)
+
+## Monitoring Networks
+
+![Monitoring Networks](images/monitor-setup-4.png)
+
+## Shodan Images
+
+![Shodan Images](images/images.png)
+
+## Shodan Images
+
+![Enumerate Logins](images/login-screen.png)
+
+## Shodan Images
+
+![Enumerate Logins](images/login-screen-info.png)
+
+## Shodan Maps
+
+![Shodan Maps](images/maps.png)
+
+## Shodan Trends
+
+![Trends](images/trends.png)
+
+## Shodan Exploits
+
+![Exploit Search](images/shodan-exploit-results.png)
+
+## Internet Exposure Observatory
+
+![By Country](images/exposure-dashboard-2.png)
+
+## Honeypot or Not
+
+![Honeypot or Not](images/honeypot-or-not.png)
+
+## ICS Rada
+
+![Boop Boop Boop](images/ics-radar.png)
+
+## SHODAN 2000!!!
+
+![Pew Pew Pew](images/shodan-2000.png)
+
+## Browser Plugin
 
 # Programatically - Bob
 
