@@ -207,43 +207,79 @@ Output
 
 # Top 5 Cleverest Queries
 
-# Robert #1 - Local router admin pages
+## Robert #1 - Local router admin pages
 `state:"MO" city:"Saint Louis" http.title:"router"`
 
-# Joe #1
+## Joe #1 - Moving to a new town
+`city:"Fairview Heights" state:"IL"`
 
-# Robert #2 - Find where certs for a domain name are served
+## Robert #2 - Find where certs for a domain name are served
 `ssl.cert.subject.cn:secretlair.org`
 
-# Joe #2
+## Joe #2 - Home Assistant Notifications
+```
+   - platform: shodan
+    api_key: !secret shodan_api
+    query: 'net:"75.132.162.114"'
+```
 
-# Robert #3 - No authentication VNC
+## Robert #3 - No authentication VNC
 `"authentication disabled" "RFB 003.008"`
 
-# Joe #3
+## Joe #3 - Rickroll EVERYONE!
+```
+shodan search "Chromecast:" port:8008 | \
+   grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | \
+   xargs -I {} \
+   vlc rickroll.mp4 --sout "#chromcast" --sout-chromecast-ip={} --dmux-filter=demux_chromecast &
 
-# Robert #4 - Only results with screenshots
+```
+
+## Robert #4 - Only results with screenshots
 `has_screenshot:true`
 
-# Joe #4
+## Joe #4
 
-# Robert #5 - Unsecured Elasticsearch Clusters
+Ran out of API calls. 
+Was gonna look for Playstations and XBoxes
+
+
+## Robert #5 - Unsecured Elasticsearch Clusters
 `product:Elastic "security features are not enabled"`
 
-# Joe #5
+## Joe #5
 
+Ran out of API calls. 
+Was going to search for FLIR cameras
 
-Top 3 Weirdest Things Found
+# Top 3 Weirdest Things Found
+(Actually it's Top 2 because we both ran out of API calls)
 
-# Robert #1 - Random 3d printer camera feed
+## Robert #1 - Random 3d printer camera feed
 `https://www.shodan.io/host/79.160.204.31`
 
-# Joe #1
+## Joe #1 - Online Gas Pump Near My House
+`"in-tank inventory" port:10001 city:"Fairview Heights" state:"IL"`
 
-# Robert #2 - Everything in Antartica
+## Robert #2 - Everything in Antartica
 `country:AQ`
 
-# Joe #2
+## Joe #2 - Hacked Routers
+`hostname:"HACKED-ROUTER-HELP-SOS-HAD-DEFAULT-PASSWORD"`
 
-# Top 3 Most Terrifying Results
+# Top 5 Most Terrifying Results
 
+## License Plate Readers
+`P372 "ANPR enabled"`
+
+## Voting systems in the US
+`"voter system serial" country:US`
+
+## Telcos running Cisco Lawful Intercept Wiretaps
+`"Cisco IOS" "ADVIPSERVICESK9_LI-M"`
+
+## Banks in the US with open Telnet Ports
+`bank country:"US" port:"23"`
+
+## Hospital running Home Assistant
+`https://www.shodan.io/host/183.88.214.202`
